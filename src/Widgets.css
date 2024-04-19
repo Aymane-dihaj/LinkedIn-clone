@@ -8,6 +8,9 @@
     border: 1px solid lightgray;
     height: fit-content;
     padding-bottom: 10px;
+    -webkit-box-shadow:0px 0px 125px 3px rgba(46,105,255,1);
+    -moz-box-shadow: 0px 0px 125px 3px rgba(46,105,255,1);
+    box-shadow: 0px 0px 125px 3px rgba(46,105,255,1);
 }
 
 .widgets-header{
