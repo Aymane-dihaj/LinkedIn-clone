@@ -10,7 +10,6 @@ import { forwardRef } from "react";
 
 const Post = forwardRef(({name, description, message, photoUrl}, ref) => {
 
-
   return (
     <div ref={ref} className='post'>
       <div className="post-header">
