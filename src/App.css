@@ -7,11 +7,12 @@
 
 
 .app-body{
-    width: 90%;
-    /* margin-left: 400px;
-    margin-right: 400px; */
     display: flex;
-    margin-top: 20px;
-    border: 2px solid red;
+    /* width: 90%; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+
+    /* border: 2px solid red; */
     max-width: 1200px;
 }   

@@ -20,12 +20,21 @@ function Login() {
     
     const loginToApp = (e) => {
       e.preventDefault();
+
+      auth.signInWithEmailAndPassword(email, password)
+      .then((userAuth) => {
+        dispatch(login({
+          email: userAuth.user.email,
+          uid: userAuth.user.uid,
+          displayName: userAuth.user.displayName,
+          profileUrl: userAuth.user.photoURL,
+        }))
+      }).catch((error) => alert(error));
     }
     
     const register = () => {
-      if (!name){
+      if (!name)
         return alert('Please Enter a Full name');
-      }
 
       auth.createUserWithEmailAndPassword(email, password).then((userAuth) => {
         userAuth.user.updateProfile({
@@ -53,7 +62,7 @@ function Login() {
             <input type="text" value={profilePic} onChange={e => setProfilePic(e.target.value)} placeholder="Profile Pic URL (optional)"/>
             <input type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email"/>
             <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password"/>
-            <button>Sign In</button>
+            <button onClick={loginToApp}>Sign In</button>
             <p>Not a member? <span className='login-register' onClick={register}>Register Now</span></p>
         </form>
 
