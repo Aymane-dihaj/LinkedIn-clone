@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import "./Login.css"
-import linkedInIcon from './assets/linkedin.png'
 import linkedInLogo from './assets/LinkedIn-logo.png'
 import { auth } from './firebase'
-import userEvent from '@testing-library/user-event'
 import { useDispatch } from 'react-redux'
 import { login } from './features/userSlice'
  

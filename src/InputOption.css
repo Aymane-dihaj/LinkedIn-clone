@@ -9,17 +9,17 @@
     color: gray;
     padding: 10px;
     cursor: pointer;
+    transition: scale 0.2s ease-in-out;
 }
 
 .input-option:hover{
-    /* border-radius: 10px; */
-    /* outline: 2px solid lightgray; */
-
+    scale: 1.2;
 }
 
-.like-btn:hover{
-    color: blue !important;
-}
+
+/* .like-btn:hover{
+    color: red !important;
+} */
 
 .input-option > h4{
     margin-left: 5px;

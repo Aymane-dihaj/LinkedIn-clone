@@ -2,10 +2,9 @@
     position: sticky;
     top: 100px;
     flex: 0.2;
-    border: 2px solid red;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
-    border: 1px solid lightgray;
+    border: 2px solid rgb(61, 61, 61);
     height: fit-content;
     padding-bottom: 10px;
 }
@@ -15,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    color: white;
 }
 
 .widgets-header > h2{
@@ -23,13 +23,15 @@
 }
 
 .widgets-article{
+    color: white;
     display: flex;
     cursor: pointer;
     padding: 10px;
+    transition: scale 0.2s ease-in-out;
 }
 
 .widgets-article:hover{
-    background-color: whitesmoke;
+    scale: 1.1;
 
 }
 
