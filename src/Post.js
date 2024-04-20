@@ -23,7 +23,7 @@ const Post = forwardRef(({name, description, message, photoUrl}, ref) => {
         <p>{message}</p>
       </div>
       <div className="post-buttons">
-        <InputOption Icon={ThumbUpOffAltIcon} title="like" color="gray"/>
+        <InputOption Icon={ThumbUpOffAltIcon} type="like" title="like" color="gray"/>
         <InputOption Icon={CommentIcon} title="Comment" color="gray"/>
         <InputOption Icon={ShareIcon} title="Share" color="gray"/>
         <InputOption Icon={SendIcon} title="Send" color="gray"/>

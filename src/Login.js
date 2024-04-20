@@ -62,10 +62,11 @@ function Login() {
             <input type="text" value={profilePic} onChange={e => setProfilePic(e.target.value)} placeholder="Profile Pic URL (optional)"/>
             <input type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email"/>
             <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password"/>
-            <button onClick={loginToApp}>Sign In</button>
-            <p>Not a member? <span className='login-register' onClick={register}>Register Now</span></p>
+            <button onClick={loginToApp}>LOGIN</button>
         </form>
-
+          <div className="register-field">
+            <p>Not a member? <span className='login-register' onClick={register}>  Register Now</span></p>
+          </div>
     </div>
 
 

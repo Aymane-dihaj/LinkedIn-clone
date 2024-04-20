@@ -1,3 +1,7 @@
+*{
+    /* box-sizing: border-box; */
+}
+
 .input-option{
     display: flex;
     align-items: center;
@@ -8,8 +12,13 @@
 }
 
 .input-option:hover{
-    border-radius: 10px;
-    background-color: whitesmoke;
+    /* border-radius: 10px; */
+    /* outline: 2px solid lightgray; */
+
+}
+
+.like-btn:hover{
+    color: blue !important;
 }
 
 .input-option > h4{

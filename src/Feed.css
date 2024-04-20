@@ -1,15 +1,19 @@
 .feed{
     flex: 0.6;
     margin: 0 20px;
+    margin-top: 0;
     width: 400px;
     max-width: 500px;
     z-index: 999;
-    
-
+    border-left: 2px solid rgb(61, 61, 61);
+    border-right: 2px solid rgb(61, 61, 61);
+    padding: 30px;
+    padding-top: 50px;
 }
 
 .feed-inputContainer{
-    background-color: white;
+    background-color: transparent;
+    border: 2px solid rgb(61, 61, 61);
     padding: 10px;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -22,8 +26,14 @@
 }
 
 
+form > input{
+    background-color: transparent;
+    color: white;
+}
+
 .feed-input{
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
+    background-color: transparent;
     border-radius: 30px;
     display: flex;
     padding: 10px;
